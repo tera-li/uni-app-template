@@ -3,6 +3,7 @@
 		<image class="logo" src="/static/logo.png"></image>
 		<view>
 			<text class="title">{{title}}</text>
+      <text>123</text>
 		</view>
 	</view>
 </template>

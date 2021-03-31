@@ -41,7 +41,8 @@
     "test:mp-baidu": "cross-env UNI_PLATFORM=mp-baidu jest -i",
     "test:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin jest -i",
     "lint-staged": "lint-staged",
-    "commitlint": "commitlint -E HUSKY_GIT_PARAMS"
+    "commitlint": "commitlint -E HUSKY_GIT_PARAMS",
+    "commit": "git-cz"
   },
   "dependencies": {
     "@dcloudio/uni-app-plus": "^2.0.0-31620210325001",
