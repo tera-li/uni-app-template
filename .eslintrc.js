@@ -1,18 +1,17 @@
 module.exports = {
   root: true,
   parserOptions: {
-    parser: 'babel-eslint',
-    sourceType: 'module'
+    parser: '@babel/eslint-parser',
+    sourceType: 'module',
+    ecmaVersion: 12
   },
   env: {
     browser: true,
     node: true,
-    es6: true
+    es2021: true
   },
   extends: ['plugin:vue/recommended', 'eslint:recommended', '@vue/prettier'],
 
-  // add your custom rules here
-  //it is base on https://github.com/vuejs/eslint-config-vue
   rules: {
     'vue/max-attributes-per-line': [
       2,

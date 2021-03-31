@@ -41,8 +41,7 @@
     "test:mp-baidu": "cross-env UNI_PLATFORM=mp-baidu jest -i",
     "test:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin jest -i",
     "lint-staged": "lint-staged",
-    "commitlint": "commitlint -E HUSKY_GIT_PARAMS",
-    "commit": "git-cz"
+    "commitlint": "commitlint -E HUSKY_GIT_PARAMS"
   },
   "dependencies": {
     "@dcloudio/uni-app-plus": "^2.0.0-31620210325001",
@@ -68,6 +67,7 @@
     "vuex": "^3.2.0"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.13.14",
     "@babel/runtime": "~7.12.0",
     "@commitlint/cli": "^12.0.1",
     "@commitlint/config-conventional": "^12.0.1",
@@ -83,11 +83,14 @@
     "@dcloudio/webpack-uni-pages-loader": "^2.0.0-31620210325001",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
     "babel-plugin-import": "^1.11.0",
     "commitizen": "^4.2.3",
     "cross-env": "^7.0.2",
     "cz-customizable": "^6.3.0",
     "eslint": "^7.23.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^7.8.0",
     "husky": "^4.2.5",
     "jest": "^25.4.0",
