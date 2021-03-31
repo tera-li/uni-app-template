@@ -12,7 +12,7 @@
 		data() {
 			return {
 				title: 'Hello'
-			}
+			};
 		},
 		onLoad() {
 
