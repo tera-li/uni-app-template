@@ -5,12 +5,91 @@
 			"style": {
 				"navigationBarTitleText": "uni-app"
 			}
+		},
+		{
+			"path": "pages/type/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		{
+			"path": "pages/service/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		{
+			"path": "pages/shop/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		{
+			"path": "pages/info/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
 		}
 	],
+	"subPackages": [{
+		"root": "types",
+		"pages": [{
+			"path": "index/index"
+		}]
+	}, {
+		"root": "services",
+		"pages": [{
+			"path": "index/index"
+		}]
+	}, {
+		"root": "shops",
+		"pages": [{
+			"path": "index/index"
+		}]
+	}, {
+		"root": "infos",
+		"pages": [{
+			"path": "index/index"
+		}]
+	}],
+	"preloadRule": {
+		"pages/index/index": {
+			"network": "all",
+			"packages": ["types", "shops", "infos"]
+		}
+	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#C0C4CC",
+		"selectedColor": "#ff536f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/type/index",
+				"text": "分类"
+			},
+			{
+				"pagePath": "pages/service/index",
+				"text": "技术服务"
+			},
+			{
+				"pagePath": "pages/shop/index",
+				"text": "购物车"
+			},
+			{
+				"pagePath": "pages/info/index",
+				"text": "我的"
+			}
+		]
 	}
 }
