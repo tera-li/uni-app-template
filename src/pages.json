@@ -53,9 +53,17 @@
 		}]
 	}],
 	"preloadRule": {
-		"pages/index/index": {
+		"pages/type/index": {
 			"network": "all",
-			"packages": ["types", "shops", "infos"]
+			"packages": ["types"]
+		},
+		"pages/shop/index": {
+			"network": "all",
+			"packages": ["shops"]
+		},
+		"pages/info/index": {
+			"network": "all",
+			"packages": ["infos"]
 		}
 	},
 	"globalStyle": {

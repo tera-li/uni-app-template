@@ -15,7 +15,9 @@ export default {
       title: 'Hello'
     }
   },
-  onLoad() {},
+  onLoad() {
+    console.log(this.$store)
+  },
   methods: {}
 }
 </script>
