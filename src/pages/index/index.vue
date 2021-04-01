@@ -1,8 +1,9 @@
 <template>
   <view class="content">
-    <image class="logo" src="/static/logo.png"></image>
+    <!--    <image class="logo" src="/static/logo.png"></image>-->
     <view>
       <text class="title">{{ title }}</text>
+      <uni-card></uni-card>
     </view>
   </view>
 </template>
