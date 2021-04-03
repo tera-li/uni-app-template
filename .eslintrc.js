@@ -11,12 +11,13 @@ module.exports = {
     es2021: true
   },
   extends: [
-    'plugin:vue/vue3-recommended',
+    'plugin:vue/recommended',
     'eslint:recommended',
     'plugin:prettier/recommended'
   ],
 
   rules: {
-    'prettier/prettier': 'error'
+    'prettier/prettier': 'error',
+    'no-undef': 1 // 变量参数等拼写错误warn
   }
 }
