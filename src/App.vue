@@ -8,12 +8,8 @@ export default {
       }
     })
   },
-  onShow: function () {
-    console.log('App Show')
-  },
-  onHide: function () {
-    console.log('App Hide')
-  },
+  onShow: function () {},
+  onHide: function () {},
   methods: {
     initSize(e) {
       const systemInfo = e
