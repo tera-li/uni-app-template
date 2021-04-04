@@ -41,7 +41,7 @@
     "test:mp-baidu": "cross-env UNI_PLATFORM=mp-baidu jest -i",
     "test:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin jest -i",
     "lint-staged": "lint-staged",
-    "commitlint": "commitlint -E HUSKY_GIT_PARAMS",
+    "commitlint": "commitlint --config .commitlint.config.js -e -V",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -125,12 +125,6 @@
           "H_NODE_ENV": "production"
         }
       }
-    }
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint-staged",
-      "commit-msg": "npm run commitlint"
     }
   },
   "lint-staged": {
