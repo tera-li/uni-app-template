@@ -109,7 +109,22 @@
   "_id": "my-project@0.1.0",
   "readme": "ERROR: No README data found!",
   "uni-app": {
-    "scripts": {}
+    "scripts": {
+      "dev:mp-weixin": {
+        "title": "dev:mp-weixin",
+        "env": {
+          "UNI_PLATFORM": "mp-weixin",
+          "H_NODE_ENV": "development1111111"
+        }
+      },
+      "build:mp-weixin": {
+        "title": "build:mp-weixin",
+        "env": {
+          "UNI_PLATFORM": "h5",
+          "H_NODE_ENV": "production"
+        }
+      }
+    }
   },
   "husky": {
     "hooks": {

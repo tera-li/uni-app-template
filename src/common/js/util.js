@@ -1,9 +1,13 @@
+/**
+ *  全局公用方法
+ * */
+
 let _debounceTimeout = null,
   _throttleRunning = false
 
 /**
  * 防抖
- * @param {Function} 执行函数
+ * @param {Function} fn 执行函数
  * @param {Number} delay 延时ms
  */
 export const debounce = (fn, delay = 500) => {
@@ -14,7 +18,7 @@ export const debounce = (fn, delay = 500) => {
 }
 /**
  * 节流
- * @param {Function} 执行函数
+ * @param {Function} fn 执行函数
  * @param {Number} delay 延时ms
  */
 export const throttle = (fn, delay = 500) => {
@@ -40,11 +44,11 @@ export const msg = (title = '', param = {}) => {
   })
 }
 /**
- * 检查登录
+ * 检查登录，token失效返回登录页面
  * @return {Boolean}
  */
 export const isLogin = (options = {}) => {
-  const token = uni.getStorageSync('uniIdToken')
+  const token = uni.getStorageSync('userToken')
   if (token) {
     return true
   }
@@ -61,7 +65,7 @@ export const isLogin = (options = {}) => {
  * @param timeStamp
  * @return {String}
  */
-export const date = (format, timeStamp) => {
+export const date = (timeStamp, format) => {
   if ('' + timeStamp.length <= 10) {
     timeStamp = +timeStamp * 1000
   } else {

@@ -1,5 +1,6 @@
 const state = {
-  info: ''
+  info: '',
+  token: ''
 }
 const mutations = {}
 const actions = {}
