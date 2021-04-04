@@ -41,7 +41,7 @@
     "test:mp-baidu": "cross-env UNI_PLATFORM=mp-baidu jest -i",
     "test:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin jest -i",
     "lint-staged": "lint-staged",
-    "commitlint": "commitlint --config .commitlint.config.js -e -V",
+    "commitlint": "commitlint --config commitlint.config.js -e -V",
     "prepare": "husky install"
   },
   "dependencies": {
