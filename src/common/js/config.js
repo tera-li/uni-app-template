@@ -29,4 +29,5 @@ const validStatus = (response) => {
     return response
   }
 }
+
 export { baseUrl, headers, validStatus }
