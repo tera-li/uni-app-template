@@ -1,13 +1,34 @@
 <script>
+import Vue from 'vue'
 export default {
   onLaunch: function () {
-    console.log('App Launch')
+    uni.getSystemInfo({
+      success: (e) => {
+        this.initSize(e)
+      }
+    })
   },
   onShow: function () {
     console.log('App Show')
   },
   onHide: function () {
     console.log('App Hide')
+  },
+  methods: {
+    initSize(e) {
+      const systemInfo = e
+      // #ifdef MP-WEIXIN
+      let custom = {}
+      let navigationBarHeight
+      // wx胶囊坐标，大小等
+      custom = wx.getMenuButtonBoundingClientRect()
+      // 导航栏高度
+      navigationBarHeight = custom.bottom + custom.top - e.statusBarHeight * 2
+      // #endif
+      systemInfo.custom = custom
+      systemInfo.navigationBarHeight = navigationBarHeight
+      Vue.prototype.systemInfo = systemInfo
+    }
   }
 }
 </script>
