@@ -2,7 +2,7 @@
   <view class="content">
     <!--    <image class="logo" src="/static/logo.png"></image>-->
     <view>
-      <text class="title" style="font-size: 24px">{{ title }}</text>
+      <text class="title">{{ title }}</text>
     </view>
   </view>
 </template>
