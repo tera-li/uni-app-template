@@ -22,7 +22,6 @@ git-cz
 
 ### 目录结构
 ```$xslt
-D:\NODEJS
 └─dist              # 打包目录
 └─node_modules      # 依赖
 └─public            # index入口、静态资源
