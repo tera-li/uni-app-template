@@ -39,11 +39,11 @@ D:\NODEJS
         ├─service   # 技术服务
         ├─shop      # 购物车
         ├─type      # 分类
-    ├─services      # 技术服务子包
-    ├─shops         # 购物车子包
-    ├─types         # 分类子包
-    ├─infos         # 个人中心子包
-    ├─login         # 登录子包
+    ├─services      # 技术服务分包
+    ├─shops         # 购物车分包
+    ├─types         # 分类分包
+    ├─infos         # 个人中心分包
+    ├─login         # 登录分包
     ├─static        # 主包静态文件
     ├─store         # vuex
     ├─uni_modules   # uni-ui组件
