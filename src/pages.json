@@ -51,6 +51,14 @@
 		"pages": [{
 			"path": "index/index"
 		}]
+	},{
+		"root": "login",
+		"pages": [{
+			"path": "index/index",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		}]
 	}],
 	"preloadRule": {
 		"pages/type/index": {
@@ -59,11 +67,11 @@
 		},
 		"pages/shop/index": {
 			"network": "all",
-			"packages": ["shops"]
+			"packages": ["shops", "login"]
 		},
 		"pages/info/index": {
 			"network": "all",
-			"packages": ["infos"]
+			"packages": ["infos", "login"]
 		}
 	},
 	"globalStyle": {
