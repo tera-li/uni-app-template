@@ -8,13 +8,19 @@
 </template>
 
 <script>
+import { userInfo } from '@/common/api'
+
 export default {
   data() {
     return {
       title: new Date()
     }
   },
-  onLoad() {},
+  onLoad() {
+    userInfo({ user: '123' }).then((res) => {
+      console.log(res)
+    })
+  },
   methods: {}
 }
 </script>

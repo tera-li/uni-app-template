@@ -6,7 +6,7 @@ import { request } from '@/common/js/request'
  */
 export const userInfo = (data) => {
   return request({
-    url: '123',
+    url: 'api/userInfo',
     method: 'get',
     data
   })

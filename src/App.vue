@@ -20,8 +20,8 @@ export default {
       custom = wx.getMenuButtonBoundingClientRect()
       // 导航栏高度
       navigationBarHeight = custom.bottom + custom.top - e.statusBarHeight * 2
-      // #endif
       systemInfo.custom = custom
+      // #endif
       systemInfo.navigationBarHeight = navigationBarHeight
       Vue.prototype.systemInfo = systemInfo
     }
