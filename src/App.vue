@@ -21,8 +21,8 @@ export default {
       // 导航栏高度
       navigationBarHeight = custom.bottom + custom.top - e.statusBarHeight * 2
       systemInfo.custom = custom
-      // #endif
       systemInfo.navigationBarHeight = navigationBarHeight
+      // #endif
       Vue.prototype.systemInfo = systemInfo
     }
   }
